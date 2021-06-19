@@ -34,6 +34,7 @@ $(document).ready(function () {
         cityNameElement.text(city);
 
         $('.citySearch').append(cityNameElement);
+        localStorage.getItem(data)
         
         var displayWeather = $('main');
         displayWeather.show(data)
