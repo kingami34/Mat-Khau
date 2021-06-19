@@ -51,6 +51,8 @@ ul{
     border: solid 10px black;
     height: 200px;
     width: 665px;
+    justify-content: space-between;
+    
 
 }
 .forecastOne{
@@ -70,6 +72,13 @@ ul{
     left: 0px;
  
     
+}
+hr{
+    width: 217px;
+    length: 200px;
+    position: relative;
+    left: 300px;
+    color: #000;
 }
 
 

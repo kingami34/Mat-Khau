@@ -11,7 +11,7 @@ $(document).ready(function () {
         console.log(text)
         weatherSearch(text)
 
-    
+
 
 
 
@@ -27,27 +27,44 @@ $(document).ready(function () {
                 console.log(data)
                 oneCall(data.coord.lon, data.coord.lat)
             });
-            
-           var showMap = document.createElement("#mainArea");
-           showMap.innerHTML = ".Box";
 
-           $('#mainArea').append(city);
-            
+
+
+        var cityNameElement = $('<p>');
+        cityNameElement.text(city);
+
+        $('.citySearch').append(cityNameElement);
+        
+        var displayWeather = $('main');
+        displayWeather.show(data)
+        console.log(show)
+
+            $('#mainArea').append(displayWeather)
 
         }
-    function oneCall(lon, lat) {
-        fetch("https://api.openweathermap.org/data/2.5/onecall?lat=" + lat + "&lon=" + lon + "&exclude=minutely,hourly,alerts&appid=eaa146ecc747767afdb5b95a5561b7e4")
-            .then(response => response.json())
-            .then(data => console.log(data));
 
-    };
+        function oneCall(lon, lat) {
+            fetch("https://api.openweathermap.org/data/2.5/onecall?lat=" + lat + "&lon=" + lon + "&exclude=minutely,hourly,alerts&appid=eaa146ecc747767afdb5b95a5561b7e4")
+                .then(response => response.json())
+                .then(data => console.log(data));
     
-    $(".citySearch").append(data)
+        };
+        
+        $(".citySearch").append(data);
+
+
+    })
+        
+    
     
 
-});
 
-    
+
+
+
+
+
+
 
 
 
