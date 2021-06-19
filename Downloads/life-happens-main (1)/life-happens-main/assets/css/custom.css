@@ -1,0 +1,47 @@
+body {
+    font-weight: 800;
+    font-size: larger;
+    color: #fff;
+    background-image: url("../img/placeholder_hi-res.jpg");
+    background-size: cover;
+    opacity: 90%;
+}
+
+.welcome-msg {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.daily-weather {
+    display: flex;
+    flex-direction: row;
+}
+
+.date-time {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    white-space: nowrap;
+}
+
+.time-text-size {
+    font-size: 36px;
+}
+
+.box {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.stock-news {
+    display: flex;
+    flex-direction: column;
+}
+
+.login {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

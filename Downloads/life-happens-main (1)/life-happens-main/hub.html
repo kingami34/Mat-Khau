@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+    <link rel="stylesheet" href="./assets/css/custom.css">
+    <title>Life Happens</title>
+</head>
+
+<body class="px-5 pt-2 pb-5">
+    <header>
+        <div class="columns mb-0">
+            <div class="column"></div>
+            <div class="column"></div>
+            <div class="column is-one-third welcome-msg">
+                <i class="mr-2">icon</i>
+                <p>Welcome Jessica</p>
+            </div>
+        </div>
+        <div class="columns ">
+            <div class="column daily-weather">
+                <i class="mr-2">icon</i>
+                <p>
+                    Seattle<br>
+                    Sunny - 64 F
+                </p>
+            </div>
+            <div class="column"></div>
+            <div class="column is-one-third date-time">
+                <p class="date">Today is </p>
+                <p><span class="time-text-size time"> AM</span></p>
+            </div>
+        </div>
+        <div class="columns mb-5">
+            <div class="column is-one-third">
+                Weather forecast
+            </div>
+            <div class="column"></div>
+            <div class="column"></div>
+        </div>
+    </header>
+
+    <main>
+        <div class="columns" style="height: 500px;">
+            <div class="column is-one-third box m-2">
+                Regional Weather
+            </div>
+            <!--To-do List Codes-->
+            <div class=" todo column box m-2">
+                <div>Todo List</div>
+                <form>
+                    <input type="text" class="todo-input">
+                    <button type="submit" class="todo-button">
+                        <i class="fas fa-plus-square"></i>
+                    </button>
+
+                    <div class="select">
+                        <select name="todos" class="select-todos">
+                            <option value="total">List all</option>
+                            <option value="done">List Done</option>
+                            <option value="in-progress">List In Progress</option>
+                        </select>
+                    </div>
+                </form>
+                <!--Elements created in Js goes in <div> below-->
+                <div class="todo-container"></div>
+
+            </div>
+            <div id="money" class="column stock-crypto p-0">
+                <div class="box m-2" style="height: 30%;">
+                    Stock
+                </div>
+                <div class="box m-2" style="height: 70%;">
+                    News
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+        integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assets/js/DateTime.js"></script>
+    <script src="https://finnhub.io/api/v1/forex/rates?base=USD&token=c370q5iad3ib6g7eg7t0"></script>
+</body>
+
+</html>
